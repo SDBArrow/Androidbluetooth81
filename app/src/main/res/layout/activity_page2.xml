@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="設備選單"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/goledctrl"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/news"
+        android:gravity="center"
+        android:minWidth="200dp"
+        android:text="LED控制" />
+    <Button
+        android:id="@+id/gorobotarmctrl"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/goledctrl"
+        android:gravity="center"
+        android:minWidth="200dp"
+        android:text="機械手臂控制" />
+
+</RelativeLayout>
